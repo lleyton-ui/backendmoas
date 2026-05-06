@@ -11,7 +11,7 @@ app.use(express.json());
 
 // 2. MONGODB CONNECTION
 // Use the Environment Variable you set in Render, or your direct string as a backup
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://lleyton:jeric0991@cluster0.pio6cez.mongodb.net/admin?retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://lleyton:jeric0991@cluster0.pio6cez.mongodb.net/moas_db?retryWrites=true&w=majority';
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log('✅ Connected to MongoDB Atlas'))
